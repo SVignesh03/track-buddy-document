@@ -1,0 +1,392 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Track-Buddy FAQ</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <meta name="title" content="Track-Buddy" />
+    <meta name="description" content="A budget and financial tracking application designed for you" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Track-Buddy" />
+    <meta property="og:description" content="A budget and financial tracking application designed for you" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Track-Buddy" />
+    <meta property="twitter:description" content="A budget and financial tracking application designed for you" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="./index.html">Home</a>
+      <a href="./policy.html">Terms and Privacy</a>
+    </div>
+    <div class="policy-wrap">
+      <div class="policy faq-width-limit">
+        <a href="./index.html" class="no-style-link">
+          <div class="app-name-header">
+            <img class="app-icon" src="assets/icon/icon-small.png"/>
+            <h2 class="app-name">Track-Buddy FAQ</h2>
+          </div>
+        </a>
+
+        <div id="search-results-container">
+          <input class="faq-search" type="text" id="search-input" placeholder="Search FAQ..." oninput="searchAndHighlight()">
+          <div id="results"></div>
+        </div>
+
+        <h3 class="faq-header">FAQ</h3>
+        
+        <details id="syncing-with-multiple-users">
+          <summary>Share Data with Partner/Other User</summary>
+          <div>
+            <p>
+                To sync data and share data with multiple users, you need to share a Google account. This ensures privacy when sharing financial data. Since Track-Buddy supports syncing of data with a Google account, a shared Google account will share data between multiple Track-Buddy apps that use the same account.
+            </p>
+            <ul>
+                <li>Share a Google account with the users you want to sync with.</li>
+                <li>Use the syncing feature in the app to keep data up-to-date across all users.</li>
+            </ul>
+            <p>
+                Currently, Track-Buddy does not support other methods of syncing due to privacy concerns and the complexity involved. Maintaining servers for this purpose is expensive and outside the scope of this app.
+            </p>
+          </div>
+        </details>
+
+        <details id="troubleshooting-syncing">
+          <summary>Syncing Troubleshooting</summary>
+          <div>
+            <p>If you're experiencing syncing issues between devices; consider the following:</p>
+            <p>Make sure you are logged in to Google Drive with the same account on all devices. Also ensure syncing between devices is enabled. Head to <em>More</em>, <em>Account</em>, login if needed, and tap the <em>Sync/Devices</em> button. here, <em>Sync Data</em> can be toggled.</p>
+            <img src="./assets/faq/sync-data.png" class="small"/>
+            <img src="./assets/faq/sync-data2.png"/>
+            <p>Syncing involves two steps: upload and download. Both steps must occur for changes to reflect across platforms.</p>
+            <p>You can force a sync by:</p>
+            <ul>
+              <li>Swiping down on the homepage</li>
+              <li>Launching the app fresh</li>
+            </ul>
+            <p>The app also syncs when it is launched and the user was previously logged in.</p>
+            <p>Each device needs to upload changes before they can be downloaded to another device.</p>
+          </div>
+        </details>
+
+        <details id="track-credit-spending">
+          <summary>Tracking Credit Card Spending</summary>
+          <div>
+            <p>To track credit card spending:</p>
+            <ul>
+              <li>Create a separate account specifically for tracking credit card spending. You can transfer amounts between accounts to add credit card payments or apply a balance correction.</li>
+              <li>Every time you make a purchase using that credit card, you would add a transaction to that account.</li>
+            </ul>
+            <p>To view a breakdown of your spending:</p>
+            <ul>
+              <li>In the "Account Details" page (tapping the account twice on the homepage account switcher sections), set the cycle time range for reports to reflect the spending from your credit card account.</li>
+              <li>Utilize the "All Spending" page to view past spending ranges associated with your credit card account. You can apply filters to only select that account. As an added bonus, you can create a budget and only select that account.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details id="transferring-between-accounts">
+          <summary>Transferring Funds Between Accounts</summary>
+          <div>
+            <p><em>Note: you will need more than one account created within Track-Buddy</em></p>
+            <h4>Creating a Transfer</h4>
+            <p>When there is more than one account created within Track-Buddy, Track-Buddy allows you to transfer funds. There are three primary ways of opening the transfer popup:</p>
+            <ul>
+              <li>A new <em>Transfer</em> tab will appear when creating a new transaction</li>
+              <img src="./assets/faq/transfer-balance1.png"/>
+              <li>Long pressing the (+) button will allow you to transfer funds</li>
+              <img src="./assets/faq/transfer-balance2.png"/>
+              <li>Editing an account will allow you to transfer funds</li>
+              <img src="./assets/faq/transfer-balance3.png"/>
+            </ul>
+            <h4>Repetitive Transfers</h4>
+            <p>You can create a repetitive transfer by first adding a transfer transaction, then editing it to a 'repetitive' or 'upcoming' transaction type. Track-Buddy will prompt you to change both transfer transactions and the transfer will behave as such.</p>
+          </div>
+        </details>
+
+        <details id="future-repetitive-transaction-not-showing-up">
+          <summary>Future Repetitive Transactions Not Shown</summary>
+          <div>
+            <p>The next repetitive transaction in the sequence will show up when you mark the current one as paid. </p>
+            <p>By default, overdue transactions (when the current date is past the set transactions date) are automatically paid. You can change this behavior by heading to <em>More</em>, <em>Settings & Customization</em>, <em>More Options</em>, Transactions: <em>Auto Pay Transactions</em>. You can press the <em>action</em> button in the transaction entry to mark it as paid immediately. Then it will create the next transaction in the cycle.</p>
+            <img src="./assets/faq/action-button.png" class="small"/>
+          </div>
+        </details>
+
+        <details id="transaction-templates">
+          <summary>Transaction Templates</summary>
+          <div>
+            <p>Track-Buddy does not offer transaction templates; however, frequently used transactions can be quickly added using the following methods:</p>
+            <ul>
+              <li>You can quickly make a copy of common transactions. After long pressing the plus button, you will see a list of commonly used transactions, tapping them will duplicate the transaction. If the amount differs, long press on the chip to customize the amount.</li>
+              <img src="./assets/faq/transaction-templates.png"/>
+              <li>Selecting (long pressing) a transaction will also allow you to duplicate the transaction (in the selected transaction top app bar). You can then edit the newly created transaction to your liking. </li>
+              <p><em>Tip: You can create duplicate transactions set to the current date and time by long pressing the duplicate option.</em></p>
+              <p><em>Tip: When editing the details of a transaction, to quickly set the date of a transaction to the current date and time, long press the date and time edit entry.</em></p>
+              <img src="./assets/faq/transaction-templates2.png"/>
+            </ul>
+          </div>
+        </details>        
+
+        <details id="import-csv-data">
+          <summary>Importing CSV / Excel and Data from Other Applications</summary>
+          <div>
+            <p>You can import data in Track-Buddy by heading to <em>More</em>, <em>Settings & Customization</em>, and scrolling down to "Import & Export". </p>
+            <p>To import data into Track-Buddy from other applications:</p>
+            <h4>Utilize Provided Templates</h4>
+            <p>Use the provided templates within the app for importing data.</p>
+            <p>To get access to the Google Sheet template, please make a copy. Follow <a href="https://support.google.com/docs/answer/49114?hl=en&co=GENIE.Platform%3DDesktop#zippy=%2Cmake-a-copy-of-a-file#:~:text=Make%20a%20copy%20of%20a%20file">this guide</a>.</p>
+            <img src="./assets/faq/import-templates.png"/>
+            <h4>Choose Import Method</h4>
+            <p>You can import data in two ways:</p>
+            <ul>
+              <li>Using a CSV file</li>
+              <li>Providing a link to a shared Google Sheet</li>
+            </ul>
+            <p>Note: When importing income, use a positive amount; for expenses, use a negative amount.</p>
+            <h4>Date Parsing</h4>
+            <p>Track-Buddy will attempt date parsing in various formats, but the official CSV format for dates provided in the templates is recommended for accuracy.</p>
+            <h4>Subcategories</h4>
+            <p>If there is already an existing subcategory with a category name, Track-Buddy will prioritize that subcategory over creating a default category with that name. Therefore, subcategory transactions can be imported under the 'category' column.</p>
+            <h4>Importing Transfer Transactions</h4>
+            <p>To import transfers, your export source (original application) needs to be able to convert transfer transactions into single income/expense transactions. A single transfer would consist of 2 transactions, an outgoing account and incoming account transaction. This would be the universal format. Once this is done, Track-Buddy can import the transactions. These imported transfer transactions should be under one 'category'. Now merge these transactions with <em>Merge Category</em> into the <em>Balance Correction</em> category within Track-Buddy. </p>
+            <p><em>Note: the 'Balance Correction' category may not exist. It is automatically created when at least one transfer or balance correction is made within Track-Buddy. So if it is missing, create a transfer or balance correction on an account.</em></p>
+          </div>
+        </details>
+
+        <details id="select-accounts-for-net-worth">
+          <summary>Net Worth Account Selection</summary>
+          <div>
+            <p>To set the accounts used in the net worth calculation on the homepage, long press the homepage section. You can then select the accounts to include along with the time range used when calculating Net Worth.</p>
+            <img src="./assets/faq/net-worth-settings.png" class="small"/>
+            <p>You can also edit home page sections by tapping the respective section while on the <em>Edit Home</em> page in Track-Buddy.</p>
+            <img src="./assets/faq/net-worth-settings2.png"/>
+          </div>
+        </details>
+
+        <details id="excluding-transaction-amount">
+          <summary>Excluding a Transaction Amount</summary>
+          <div>
+            <p>To exclude a transaction amount from all totals but still keep a transaction entry, you can edit the transaction of interest, scroll down and select <em>More Options</em> and toggle <em>Include Amount</em>. This setting is only available for <em>Default</em> transaction types.</p>
+            <img src="./assets/faq/include-amount.png"/>
+          </div>
+        </details>
+
+        <details id="set-budget-no-change-balance">
+          <summary>Add to a Budget, Goal, or Long-Term Loan Without Affecting Account Balance</summary>
+          <div>
+            <p>To add to a budget, goal, or long-term loan without impacting your account balance, create a separate account dedicated to tracking your budget, goal, or long-term loan contribution transactions. Transactions added to this account will not affect other account balances. Once you create a transaction added to this extra account, you can organize it into your budget, goal or long-term loan of your choice.</p>
+          </div>
+        </details>
+
+        <details id="archiving">
+          <summary>Archiving Budgets, Goals, and Long-Term Loans</summary>
+          <div>
+            <p>To archive a budget, goal, or long-term loan you need to visit the edit data page for each. To visit the edit data page head to <em>More</em>, <em>Budgets/Goals/Loans</em> and tapping the 'Pencil' icon in the top right if needed. To archive a budget/goal/long-term loan you can toggle the 'eye' icon. This will make the archived item always listed at the end of lists during selections and fade out the option.</p>
+            <p>To remove a pinned budget, goal, or long-term loan on the homepage, you will need to edit the home page section separately.</p>
+            <img src="./assets/faq/edit-budgets.png" class="small"/>
+            <img src="./assets/faq/edit-goals.png" class="small"/>
+            <img src="./assets/faq/edit-long-term-loanspng.png" class="small"/>
+          </div>
+        </details>
+
+        <details id="split-transaction-multiple-categories">
+          <summary>Splitting a Transaction Across Multiple Categories</summary>
+          <div>
+            <p>Track-Buddy prioritizes efficient and straightforward transaction logging. If you need to divide a transaction among various categories, you can create separate transactions for each detail, enabling you to tailor your level of detail while maintaining a simple interface for all. Although it doesn't natively support splitting transactions across multiple categories, you have the freedom to log your spending as you see fit by adding individual transactions for each detail you wish to track.</p>
+          </div>
+        </details>
+
+        <details id="multiple-currencies">
+          <summary>Using Multiple Currencies</summary>
+          <div>
+            <p>Track-Buddy only supports one currency per account. You can change the currency by editing an account.</p>
+            <img src="./assets/faq/account-currency-picker.png" class="small"/>
+            <p>However, if you need to enter a different currency with automatic conversion into another account, you can use the currency conversion button when entering an amount.</p>
+            <p>Make sure the primary account is selected to the currency you want to convert to. Then, select another account when entering an amount, and convert the amount back to the primary account with one tap.</p>
+            <p>In the example below, 'Bank (USD)' is our primary account, and we want to convert 50 EUR to USD using the conversion rate. We can do this by selecting 'Other (EUR)' and tapping the conversion button.</p>
+            <img src="./assets/faq/convert-currency.png" class="small"/>
+            <p>To change the primary account's currency by heading to <em>More</em>, <em>Accounts</em>; the starred account represents the primary account and selected currency of the application. Track-Buddy will convert all currencies to this account.</p>
+            <p>You can customize the currency conversion rates by heading to <em>More</em>, <em>Accounts</em>, <em>Exchange Rates</em>. If a custom currency is not set, exchange rates are used and updated daily from <a href="https://github.com/fawazahmed0/exchange-api">https://github.com/fawazahmed0/exchange-api</a>.</p>
+            <img src="./assets/faq/edit-accounts.png" class="small"/>
+          </div>
+        </details>
+
+        <details id="backups">
+          <summary>Cloud and Local Backups</summary>
+          <div>
+            <p>Track-Buddy offers 2 methods of backups: Google Drive Cloud Backups and Local Data File Backups. To create/import backups head to <em>More</em>, <em>Settings & Customization</em>, under the 'Backups' section. </p>
+            <img src="./assets/faq/backups.png" class="small"/>
+            <p><em>Note: Exporting and Importing CSV files as backups is NOT recommended. Track-Buddy does not export all app data nor does it import all app data when using CSV Importing and Exporting.</em></p>
+          </div>
+        </details>
+
+        <details id="delete-all-data">
+          <summary>Deleting All Data</summary>
+          <div>
+            <p>To delete all data in the app, go to <em>More</em>, <em>About Track-Buddy</em>, and scroll down to find <em>Delete All Data</em>.</p>
+            <img src="./assets/faq/delete-all-data.png"/>
+            <p>This process will prompt you to delete sync data if you do not want it to be restored upon login.</p>
+            <p>After logging in again, Track-Buddy will attempt to restore sync backups. If you do not want your synced devices to be restored, you will need to delete them. Navigate to the account page, tap on <em>Sync/Devices</em>, and delete the sync backups.</p>
+            <img src="./assets/faq/sync-data.png" class="small"/>
+            <img src="./assets/faq/delete-sync-data.png" class="small"/>
+          </div>
+        </details>
+
+        <details id="delete-hidden-Track-Buddy-sync-data">
+          <summary>Deleting and Accessing Google Drive Data</summary>
+          <div>
+            <p>Google Drive is used by Track-Buddy to store sync data and cloud backups.</p>
+            <h4>Deleting Track-Buddy's Google Drive Cloud Data</h4>
+            <p>To delete all hidden Track-Buddy sync data through Google Drive:</p>
+            <ol>
+              <li>Open a web browser (NOT the application or mobile website) and visit <a href="https://drive.google.com/drive/u/0/settings">https://drive.google.com/drive/u/0/settings</a> while logged in to the Google account you use with Track-Buddy.</li>
+              <li>Go to the <em>Manage Apps</em> tab.</li>
+              <li>Locate 'Track-Buddy'.</li>
+              <li>Click on <em>Options</em>.</li>
+              <li>Select <em>Delete hidden app data</em>.</li>
+            </ol>
+            <img src="./assets/faq/delete-drive-data.png" class="wide"/>
+            <h4>Accessing Track-Buddy's Google Drive Cloud Data</h4>
+            <p>Any connected app data is not available to be viewed by users using Google Drive. This is to ensure app data does not get tampered with. If you need to download a backup stored on your drive, Track-Buddy allows you to download these backups within. You can only remove all your app data through Google Drive management, not view it.</p>
+          </div>
+        </details>
+
+        <h3 class="faq-header">Tips and Tricks</h3>
+
+        <details id="customizing-tab-pages">
+          <summary>Customizing Bottom Navigation Bar Pages</summary>
+          <div>
+            <p>To customize the navigation tabs, long press each one to select the page of preference. You cannot change the last tab.</p>
+            <img src="./assets/faq/custom-tab-shortcut.png"/>
+            <p><em>Note: You can only customize tabs while in mobile layout. When in fullscreen/landscape the side navigation menu cannot be customized.</em></p>
+          </div>
+        </details>
+
+        <details id="duplicating-transaction-current-time">
+          <summary>Duplicating a Transaction to the Current Date and Time</summary>
+          <div>
+            <p>When a transaction is selected you can duplicate the transaction (in the selected transaction top app bar). To duplicate the transactions to the current date and time, you can long press the duplicate option.</p>
+            <img src="./assets/faq/transaction-templates2.png"/>
+            <p>You can also quickly make a copy of common transactions by long pressing the plus button. You will see a list of commonly used transactions, tapping them will duplicate the transaction. If the amount differs, long press on the chip to customize the amount.</p>
+            <img src="./assets/faq/transaction-templates.png"/>
+          </div>
+        </details>
+
+        <details id="long-press-plus-button">
+          <summary>Long Press the (+) Button</summary>
+          <div>
+            <p>After long pressing the (+) button in the bottom right corner on most pages, you will be presented with more options to 'Add' things apart from the default transaction.</p>
+            <img src="./assets/faq/long-press-plus-button.png" class="small"/>
+            <img src="./assets/faq/long-press-plus-button-details.png" class="small"/>
+          </div>
+        </details>
+
+        <details id="long-pressing-to-edit">
+          <summary>Long Pressing to Edit</summary>
+          <div>
+            <p>Most UI elements can be 'long pressed' (a press and hold) to edit or perform an extra action. For example, long pressing a category when selecting one during a 'Select Category' popup, will allow you to edit that category.</p>
+          </div>
+        </details>
+
+        <details id="copy-and-paste-amounts">
+          <summary>Copy and Paste Amounts</summary>
+          <div>
+            <p>Most amounts within Track-Buddy can be 'long pressed' (a press and hold) to copy the amount. When adding a transaction or entering an amount, you can long press to 'copy' or 'paste' amounts from your clipboard.</p>
+            <img src="./assets/faq/copy-paste-amount2.png" class="small"/>
+            <img src="./assets/faq/copy-paste-amount.png" class="small"/>
+          </div>
+        </details>
+
+        <details id="sharing-transaction-details">
+          <summary>Sharing Transaction Details</summary>
+          <div>
+            <p>After selecting multiple transactions with a long press, you can share a breakdown of the selected transaction by tapping the total amount in the dropdown app bar. Alternatively, you can long press the total to copy the transactions breakdown to your clipboard.</p>
+            <img src="./assets/faq/share-transaction-details.png"/>
+          </div>
+        </details>
+
+        <h3 class="faq-header">Guides</h3>
+
+        <details id="creating-a-budget-guide">
+          <summary>Creating a Budget</summary>
+          <div>
+            <p>Track-Buddy is a budget tracking application after all, so let's take a deep dive into learning how to create and manage a budget within Track-Buddy in detail.</p>
+            <p>To create a budget, first open the <em>Budgets</em> page. Head to <em>More</em>, <em>Budgets</em>, and tap the (+) button.</p>
+            <img src="./assets/faq/add-budget.png" class="small"/>
+            <img src="./assets/faq/add-budget2.png" class="small"/>
+            <p>There are two types of budgets: <em>Added Only</em> budget and an <em>All Transactions</em> budget. This cannot be changed after the budget is created. However, you can create multiple budgets within Track-Buddy.</p>
+            <p><strong>Added Only Budget:</strong></p>
+            <ul>
+              <li>Only the transactions you add</li>
+              <li>Useful for one-time budgets with custom time periods</li>
+              <li>Example: 'Vacation' budget</li>
+            </ul>
+            <p><strong>All Transactions Budget:</strong></p>
+            <ul>
+              <li>All transactions within selected categories and filters</li>
+              <li>Useful for long-term budgets over multiple periods</li>
+              <li>Example: 'Monthly Spending' budget</li>
+            </ul>
+            <img src="./assets/faq/budget-type-options.png"/>
+            <p>You can also select if you want to budget for savings (positive cash flow, such as income) or budget for negative cash flow, such as expenses.</p>
+            <p>Set a name for the budget, color, budget amount, and the start day and period. The cycle of a budget will always reset and past budget periods can be viewed. If you want your budget to start on the 21st of the month, select any date with the day of the 21 (e.g., September 21). Track-Buddy will show you the current period based on the current date from the start date you set.</p>
+            <img src="./assets/faq/example-budget.png" class="small"/>
+            <p>To set the period, you can choose a custom budget period (time range) or an automatically recurring cycle, such as every 2 weeks or every month.</p>
+            <p>For an <em>all transactions</em> budget, you can select the transactions to automatically include. For example, if you would like to include income in an expense budget (which will decrease the total spend, since the opposite polarity of transactions are included), you can select <em>Income</em> under <em>Transactions to Include</em>. Tap the (i) to read about each <em>Transactions to Include</em> filter. You can also select which categories to include or exclude from an all transactions budget.</p>
+            <img src="./assets/faq/transactions-to-include.png"/>
+            <p>Each transaction can also be manually excluded from an all transactions budget. To do this, edit the transaction of interest, scroll down, tap <em>More Options</em>, and select the budget you would like to exclude this transaction from.</p>
+            <img src="./assets/faq/exclude-transaction.png"/>
+
+            <h4>Setting Up Category Spending Goals</h4>
+            <p>Once you create a budget, you can set up smaller 'sub-budgets' or, as Track-Buddy calls them, <em>Category Spending Goals</em> to break down your spending for each category within an overall budget.</p>
+            <p>To add category spending goals, edit the budget and tap <em>Set Category Spending Goals</em>. Here you can set a percentage goal (percentage of the budget total) for each category or an absolute spending goal (actual amount of money). You can also apply these goals to subcategories and main categories. By long-pressing a category entry in the budget spending overview page below the pie chart, you can quickly modify the category spending goal to suit your spending needs.</p>
+            <img src="./assets/faq/spending-goals.png" class="small"/>
+          
+            <h4>Reading a Budget Graph</h4>
+            <p>Track-Buddy adds useful indicators to help you track your spending trajectory. Within a budget spending breakdown, you will see a line graph showing the amount spent versus date through the budget period.</p>
+            <p>A dashed line is drawn on the current date and the average amount spent per day up to the current day. The intersection indicates where your spending should be at that given time for a budget to stay on track.</p>
+            <img src="./assets/faq/budget-graph.png" class="small"/>
+
+            <h4>Viewing Past Budget Periods</h4>
+            <p>You can tap the history icon to see past budget period breakdowns. You can only view the history of non-custom period budgets.</p>
+            <img src="./assets/faq/budget-history-button.png" class="small"/>
+            <img src="./assets/faq/budget-history.png"/>
+          </div>
+        </details>
+        
+        <div class="centered-contact">
+          <p class="center-paragraph">
+            Questions? Feel free to reach out
+          </p>
+          <div class="buttons-container" style="padding-left:  calc(50% - 100px) !important;">
+            <a href="https://github.com/SVignesh03/track-buddy" target="_blank">
+              <div class="button">
+                <img src="assets/link-icons/code.png" />
+                GitHub
+              </div>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B916369343481&text&type=phone_number" target="_blank">
+              <div class="button">
+                <img src="assets/link-icons/whatsapp.png" />
+                WhatsApp
+              </div>
+            </a>
+            <a href="https://t.me/s_vignesh03" target="_blank">
+              <div class="button">
+                <img src="assets/link-icons/telegram.png" />
+                Telegram
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
